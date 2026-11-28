@@ -1,5 +1,5 @@
 # Build on the runner's native platform and cross-compile for the target (no emulation).
-FROM --platform=$BUILDPLATFORM golang:1.26 AS build
+FROM --platform=$BUILDPLATFORM golang:1.27 AS build
 ARG TARGETOS TARGETARCH
 WORKDIR /src
 COPY go.mod ./
